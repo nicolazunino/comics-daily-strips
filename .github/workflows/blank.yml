@@ -24,20 +24,3 @@ on:
         ftp-server: tp://ftp.nicolazunino.altervista.org:21/
         ftp-username: nicolazunino
         ftp-password: ${{ secrets.FTP_PASSWORD }}
-        
-        
-          # Setup
-          git config git-ftp.url "f"
-          git config git-ftp.user ""
-          git config git-ftp.password ""
-
-          # Upload all files
-          git ftp init
-
-          # Or if the files are already there
-          git ftp catchup
-
-          # Work and deploy
-          echo "new content" >> index.txt
-          git commit index.txt -m "Add new content"
-          git ftp push
