@@ -30,9 +30,9 @@ jobs:
     - name: Run a multi-line script
       run: |
           # Setup
-          git config git-ftp.url "ftp://ftp.example.net:21/public_html"
-          git config git-ftp.user "ftp-user"
-          git config git-ftp.password "secr3t"
+          git config git-ftp.url "ftp://ftp.nicolazunino.altervista.org:21/"
+          git config git-ftp.user "nicolazunino"
+          git config git-ftp.password "AqSwDeFr1234"
 
           # Upload all files
           git ftp init
